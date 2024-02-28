@@ -33,7 +33,7 @@ DEBUG = os.environ.get("DEBUG") == "True"
 
 ALLOWED_HOSTS = [
     "sd-ci-project-ado-d7d0c01fa2c7.herokuapp.com",
-    "127.0.0.1:8000",
+    "127.0.0.1",
 ]
 
 
