@@ -1,0 +1,1 @@
+web: sh -c 'cd project_ado/ && gunicorn project_ado.wsgi:application'
