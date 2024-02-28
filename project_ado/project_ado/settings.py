@@ -82,7 +82,7 @@ WSGI_APPLICATION = "project_ado.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-if os.environ.get("DEBUG") == "True":
+if os.environ.get("TYPE") == "Test":
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.sqlite3",
