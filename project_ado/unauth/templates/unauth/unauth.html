@@ -1,5 +1,27 @@
 {% extends "base.html" %}
 {% load static %}
+{% block title-subtitle %}
+    Home
+{% endblock title-subtitle %}
+{% block page_sub_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col">Empty col</div>
+        </div>
+    </div>
+{% endblock page_sub_header %}
 {% block content %}
-    <h2>This is some content</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-w col-md-6 my-auto">
+                <h1 class="dipslay-4 logo-font text-black">The new collections are here</h1>
+            </div>
+            <div class="my-5">
+                <h4>
+                    <a href="#"
+                       class="btn btn-log shop-now-button rouded-0 text-uppercase py-3">Shop Now</a>
+                </h4>
+            </div>
+        </div>
+    </div>
 {% endblock content %}
