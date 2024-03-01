@@ -1,0 +1,13 @@
+body {
+  background-color: #fbb434;
+}
+
+h1 {
+  max-width: 10ch;
+  text-align: start;
+  margin-inline: auto;
+}
+
+.row:has(h1) {
+  margin-top: 20rem;
+}
