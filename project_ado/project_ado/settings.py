@@ -52,7 +52,9 @@ INSTALLED_APPS = [
     "allauth.account",
     "allauth.socialaccount",
     "cloudinary",
+    "cloudinary_storage",
     "unauth",
+    "products",
 ]
 
 SITE_ID = 1
@@ -78,7 +80,11 @@ ROOT_URLCONF = "project_ado.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [os.path.join(BASE_DIR, "templates"), BASE_DIR],
+        "DIRS": [
+            os.path.join(BASE_DIR, "templates"),
+            BASE_DIR,
+            os.path.join(BASE_DIR, "templates", "allauth"),
+        ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
